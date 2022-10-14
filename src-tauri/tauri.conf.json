@@ -6,8 +6,8 @@
     "distDir": "../dist"
   },
   "package": {
-    "productName": "todo_list",
-    "version": "0.0.0"
+    "productName": "Simple todo list",
+    "version": "0.0.1"
   },
   "tauri": {
     "allowlist": {
@@ -55,10 +55,10 @@
     "windows": [
       {
         "fullscreen": false,
-        "height": 600,
+        "height": 650,
         "resizable": true,
-        "title": "todo_list",
-        "width": 800
+        "title": "Todo list",
+        "width": 400
       }
     ]
   }
