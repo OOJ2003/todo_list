@@ -49,14 +49,17 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-     # 安装 Node.js
+      # 安装 Node.js
       - name: Setup node
         uses: actions/setup-node@v1
         with:
           node-version: 16
-      
+      # 安装 pnpm
       - name: Setup pnpm
         uses: pnpm/action-setup@v2.2.3
+        with:
+          version: latest
+          run_install: true
  
       
       # 安装 Rust
@@ -76,8 +79,8 @@ jobs:
 
 
       # 安装依赖执行构建，以及推送 github release
-      - name: Install app dependencies and build it
-        run: pnpm install && pnpm tauri build
+      - name: Build app 
+        run: pnpm tauri build
       - uses: tauri-apps/tauri-action@v0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
