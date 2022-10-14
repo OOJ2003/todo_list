@@ -5,7 +5,6 @@
 pub mod todo;
 use todo::*;
 
-
 fn main() {
     let database = Database::new_init().unwrap();
     tauri::Builder::default()

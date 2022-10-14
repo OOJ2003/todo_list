@@ -11,7 +11,6 @@ export const changeTodoDone = async (
   all: todo[],
   fn: React.Dispatch<React.SetStateAction<todo[]>>
 ) => {
-  
   const diff = all.find((e) => e.id === key)!;
   const temp = { ...diff, done: !diff.done };
 
