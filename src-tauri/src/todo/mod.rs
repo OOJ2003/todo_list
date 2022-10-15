@@ -1,6 +1,7 @@
 use rusqlite::{Connection, Result};
 use serde::{Deserialize, Serialize};
-use std::sync::Mutex;
+use std::{fs::create_dir, path::Path, sync::Mutex};
+use tauri::api::path::local_data_dir;
 
 #[derive(Serialize, Deserialize, Debug)]
 pub struct Todo {
@@ -15,9 +16,18 @@ pub struct Database {
 
 impl Database {
     pub fn new_init() -> Result<Self> {
-        // $HOMEPATH/.task_manger
-        let flag = std::path::Path::new("./data.db").exists();
-        let conn = Connection::open("./data.db")?;
+        let mut folder = local_data_dir().unwrap();
+        folder.push("todo_list");
+        let mut db = folder.clone();
+
+        if !Path::new(&folder).exists() {
+            create_dir(&folder).unwrap();
+        }
+
+        db.push(format!("data.db"));
+
+        let flag = db.as_path().exists();
+        let conn = Connection::open(db.as_path())?;
 
         if !flag {
             conn.execute(
@@ -52,11 +62,18 @@ pub fn get_all(state: tauri::State<Database>) -> Vec<Todo> {
             })
         })
         .unwrap();
-    rows.into_iter().flat_map(|x| x).collect()
+    rows.into_iter()
+        .flat_map(|x| x)
+        .collect()
 }
 
 fn execute_sql(state: &tauri::State<Database>, sql: &str, msg: &str) {
-    match state.db.lock().unwrap().execute(sql, ()) {
+    match state
+        .db
+        .lock()
+        .unwrap()
+        .execute(sql, ())
+    {
         Ok(_) => {}
         Err(x) => {
             println!("{msg} error: {x}")

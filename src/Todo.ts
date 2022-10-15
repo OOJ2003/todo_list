@@ -1,9 +1,9 @@
-import { invoke } from "@tauri-apps/api/tauri";
+import { invoke } from "@tauri-apps/api/tauri"
 
 export interface todo {
-  id: string;
-  content: string;
-  done: boolean;
+  id: string
+  content: string
+  done: boolean
 }
 
 export const changeTodoDone = async (
@@ -11,23 +11,23 @@ export const changeTodoDone = async (
   all: todo[],
   fn: React.Dispatch<React.SetStateAction<todo[]>>
 ) => {
-  const diff = all.find((e) => e.id === key)!;
-  const temp = { ...diff, done: !diff.done };
+  const diff = all.find((e) => e.id === key)!
+  const temp = { ...diff, done: !diff.done }
 
-  fn([temp, ...all.filter((i) => i.id !== key)]);
-  await invoke<void>("update", { item: diff });
-};
+  fn([temp, ...all.filter((i) => i.id !== key)])
+  await invoke<void>("update", { item: diff })
+}
 
 export const deleteTodo = async (
   key: string,
   all: todo[],
   fn: React.Dispatch<React.SetStateAction<todo[]>>
 ) => {
-  const diff = all.find((e) => e.id === key)!;
+  const diff = all.find((e) => e.id === key)!
 
-  fn(all.filter((i) => i.id !== key));
-  await invoke<void>("delete", { item: diff });
-};
+  fn(all.filter((i) => i.id !== key))
+  await invoke<void>("delete", { item: diff })
+}
 
 export const insertNewTodo = async (
   content: string,
@@ -35,14 +35,14 @@ export const insertNewTodo = async (
   fn: React.Dispatch<React.SetStateAction<todo[]>>
 ) => {
   if (content === "") {
-    return;
+    return
   }
   const temp: todo = {
     id: Date.now() + content,
     content: content,
     done: false,
-  };
+  }
 
-  fn([temp, ...all]);
-  await invoke<void>("insert", { item: temp });
-};
+  fn([temp, ...all])
+  await invoke<void>("insert", { item: temp })
+}
