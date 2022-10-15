@@ -15,7 +15,7 @@ export const changeTodoDone = async (
   const temp = { ...diff, done: !diff.done }
 
   fn([temp, ...all.filter((i) => i.id !== key)])
-  await invoke<void>("update", { item: diff })
+  await invoke<void>("update", { item: temp })
 }
 
 export const deleteTodo = async (
