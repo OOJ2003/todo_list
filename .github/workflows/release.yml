@@ -85,6 +85,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          releaseId: 'SimpleTodoList${{ steps.get_version.outputs.VERSION }}'
-          #  ${{ needs.create-release.outputs.RELEASE_UPLOAD_ID }}
-          #  releaseName: 'Simple Todo List ${{ steps.get_version.outputs.VERSION }}'
+          releaseId: ${{ needs.create-release.outputs.RELEASE_UPLOAD_ID }}
