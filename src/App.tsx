@@ -71,7 +71,7 @@ function App() {
           style={{ height: "40px" }}
           type="primary"
           onClick={() => {
-            insertNewTodo(inputValue, todos, setTodos)
+            insertNewTodo(inputValue, todos, setTodos).then()
           }}
         >
           <PlusOutlined />
