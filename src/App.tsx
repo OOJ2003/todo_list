@@ -15,11 +15,13 @@ function App() {
     invoke<todo[]>("get_all").then((i) => setTodos(i))
   }, [])
 
-  //custom todo list
   interface TodoListProps {
     filterFn: (i: todo) => boolean
   }
 
+  /**
+   * @description A custom todo list component
+   */
   const TodoList: React.FC<TodoListProps> = (props) => {
     return (
       <List size="large">

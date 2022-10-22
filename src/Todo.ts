@@ -1,11 +1,23 @@
 import { invoke } from "@tauri-apps/api/tauri"
 
+/**
+ * @description A basic todo.
+ * @param id The unique id of todo, useful in list.
+ * @param content Todo's content.
+ * @param done When done is true, it means the todo is finished.
+ */
 export interface todo {
   id: string
   content: string
   done: boolean
 }
 
+/**
+ * @description Change a todo's state(finish or unfinished).
+ * @param key The id of the todo item which you want to change it's state.
+ * @param all A collection of all the existing todos.
+ * @param fn A function which can updates the component's state.
+ */
 export const changeTodoDone = async (
   key: string,
   all: todo[],
@@ -18,6 +30,12 @@ export const changeTodoDone = async (
   await invoke<void>("update", { item: temp })
 }
 
+/**
+ * @description Delete a todo.
+ * @param key The id of the todo item which you want to delete it.
+ * @param all A collection of all the existing todos.
+ * @param fn A function which can updates the component's state.
+ */
 export const deleteTodo = async (
   key: string,
   all: todo[],
@@ -29,6 +47,13 @@ export const deleteTodo = async (
   await invoke<void>("delete", { item: diff })
 }
 
+/**
+ * @description Create and insert a new todo.
+ * @param content The content of the new todo.
+ * @param all A collection of all the existing todos.
+ * @param fn A function which can updates the component's state.
+ *
+ */
 export const insertNewTodo = async (
   content: string,
   all: todo[],
