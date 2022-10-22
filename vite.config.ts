@@ -31,5 +31,9 @@ export default defineConfig({
     globals: true,
     environment: "jsdom",
     setupFiles: ["src/__tests__/setupTests.ts"],
+    coverage: {
+      // you can include other reporters, but 'json-summary' is required, json is recommended
+      reporter: ["text", "json-summary", "json"],
+    },
   },
 })
