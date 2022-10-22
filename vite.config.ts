@@ -1,3 +1,6 @@
+/// <reference types="vitest"/>
+/// <reference types="vite/client"/>
+
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
@@ -24,4 +27,9 @@ export default defineConfig({
     // produce sourcemaps for debug builds
     sourcemap: !!process.env.TAURI_DEBUG,
   },
-});
+  test: {
+    globals: true,
+    environment: "jsdom",
+    setupFiles: ["src/__tests__/setupTests.ts"],
+  },
+})

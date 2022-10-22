@@ -7,21 +7,17 @@ import { changeTodoDone, deleteTodo, insertNewTodo, todo } from "./Todo"
 
 function App() {
   const [todos, setTodos] = useState<todo[]>([])
-  const [initFlag, setInitFlag] = useState(false)
   const [inputValue, setInputValue] = useState("")
   const ascTodos = (a: todo, b: todo) => (a.id > b.id ? 1 : -1)
 
-  //组件挂载时初始化数据
+  //get data from backend when App mountain
   useEffect(() => {
-    if (!initFlag) {
-      invoke<todo[]>("get_all").then((i) => setTodos(i))
-      setInitFlag(!initFlag)
-    }
+    invoke<todo[]>("get_all").then((i) => setTodos(i))
   }, [])
 
-  //自定义列表组件
+  //custom todo list
   interface TodoListProps {
-    fn: (i: todo) => boolean
+    filterFn: (i: todo) => boolean
   }
 
   const TodoList: React.FC<TodoListProps> = (props) => {
@@ -29,7 +25,7 @@ function App() {
       <List size="large">
         {todos
           .sort(ascTodos)
-          .filter(props.fn)
+          .filter(props.filterFn)
           .map((i) => {
             return (
               <List.Item key={i.id}>
@@ -55,9 +51,9 @@ function App() {
   return (
     <div>
       {/* 未完成todo表 */}
-      <TodoList fn={(i) => !i.done} />
+      <TodoList filterFn={(i) => !i.done} />
       {/* 已完成todo表 */}
-      <TodoList fn={(i) => i.done} />
+      <TodoList filterFn={(i) => i.done} />
 
       <Input.Group compact>
         <Input

@@ -3,6 +3,18 @@
     "development"
   ],
   "hints": {
-    "disown-opener": "off"
-  }
+    "disown-opener": "off",
+    "typescript-config/consistent-casing": "off",
+    "typescript-config/strict": "off"
+  },
+  "browserslist": [
+    "defaults",
+    "not ie 11",
+    "not and_chr <= 106",
+    "not chrome <= 106",
+    "not edge <= 106",
+    "not firefox <= 105",
+    "not safari <= 16",
+    "not samsung <= 18"
+  ]
 }
