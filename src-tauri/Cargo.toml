@@ -1,8 +1,8 @@
 [package]
 name = "tauri_todo_list"
-version = "0.0.0"
+version = "0.0.2"
 description = "A simple todo list."
-authors = ["OOJ"]
+authors = ["OOJ2003"]
 license = "MIT"
 repository = ""
 edition = "2021"
