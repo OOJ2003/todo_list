@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1666440316255" clover="3.2.0">
+  <project timestamp="1666440316255" name="All files">
+    <metrics statements="174" coveredstatements="172" conditionals="27" coveredconditionals="26" methods="19" coveredmethods="18" elements="220" coveredelements="216" complexity="0" loc="174" ncloc="174" packages="2" files="3" classes="3"/>
+    <package name="src">
+      <metrics statements="155" coveredstatements="153" conditionals="22" coveredconditionals="21" methods="15" coveredmethods="14"/>
+      <file name="App.tsx" path="D:\Projects\School\tauri\todo_list\src\App.tsx">
+        <metrics statements="82" coveredstatements="82" conditionals="11" coveredconditionals="11" methods="9" coveredmethods="8"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="35" type="cond" truecount="1" falsecount="0"/>
+        <line num="9" count="35" type="stmt"/>
+        <line num="10" count="35" type="stmt"/>
+        <line num="11" count="35" type="stmt"/>
+        <line num="12" count="35" type="stmt"/>
+        <line num="13" count="35" type="stmt"/>
+        <line num="14" count="35" type="cond" truecount="1" falsecount="0"/>
+        <line num="15" count="3" type="cond" truecount="1" falsecount="0"/>
+        <line num="16" count="35" type="stmt"/>
+        <line num="17" count="35" type="stmt"/>
+        <line num="18" count="35" type="stmt"/>
+        <line num="19" count="35" type="stmt"/>
+        <line num="20" count="35" type="stmt"/>
+        <line num="21" count="35" type="stmt"/>
+        <line num="22" count="35" type="stmt"/>
+        <line num="23" count="35" type="stmt"/>
+        <line num="24" count="35" type="stmt"/>
+        <line num="25" count="35" type="cond" truecount="1" falsecount="0"/>
+        <line num="26" count="70" type="stmt"/>
+        <line num="27" count="70" type="stmt"/>
+        <line num="28" count="70" type="stmt"/>
+        <line num="29" count="70" type="stmt"/>
+        <line num="30" count="70" type="stmt"/>
+        <line num="31" count="70" type="cond" truecount="1" falsecount="0"/>
+        <line num="32" count="5" type="stmt"/>
+        <line num="33" count="5" type="stmt"/>
+        <line num="34" count="5" type="stmt"/>
+        <line num="35" count="5" type="stmt"/>
+        <line num="36" count="5" type="stmt"/>
+        <line num="37" count="5" type="cond" truecount="1" falsecount="0"/>
+        <line num="38" count="5" type="stmt"/>
+        <line num="39" count="5" type="stmt"/>
+        <line num="40" count="5" type="stmt"/>
+        <line num="41" count="5" type="stmt"/>
+        <line num="42" count="5" type="stmt"/>
+        <line num="43" count="5" type="stmt"/>
+        <line num="44" count="5" type="cond" truecount="1" falsecount="0"/>
+        <line num="45" count="5" type="stmt"/>
+        <line num="46" count="5" type="stmt"/>
+        <line num="47" count="5" type="stmt"/>
+        <line num="48" count="70" type="stmt"/>
+        <line num="49" count="70" type="stmt"/>
+        <line num="50" count="70" type="stmt"/>
+        <line num="51" count="70" type="stmt"/>
+        <line num="52" count="35" type="stmt"/>
+        <line num="53" count="35" type="stmt"/>
+        <line num="54" count="35" type="stmt"/>
+        <line num="55" count="35" type="stmt"/>
+        <line num="56" count="35" type="cond" truecount="1" falsecount="0"/>
+        <line num="57" count="35" type="stmt"/>
+        <line num="58" count="35" type="cond" truecount="1" falsecount="0"/>
+        <line num="59" count="35" type="stmt"/>
+        <line num="60" count="35" type="stmt"/>
+        <line num="61" count="35" type="stmt"/>
+        <line num="62" count="35" type="stmt"/>
+        <line num="63" count="35" type="cond" truecount="1" falsecount="0"/>
+        <line num="64" count="25" type="stmt"/>
+        <line num="65" count="25" type="stmt"/>
+        <line num="66" count="35" type="stmt"/>
+        <line num="67" count="35" type="stmt"/>
+        <line num="68" count="35" type="stmt"/>
+        <line num="69" count="35" type="stmt"/>
+        <line num="70" count="35" type="stmt"/>
+        <line num="71" count="35" type="cond" truecount="1" falsecount="0"/>
+        <line num="72" count="2" type="stmt"/>
+        <line num="73" count="2" type="stmt"/>
+        <line num="74" count="35" type="stmt"/>
+        <line num="75" count="35" type="stmt"/>
+        <line num="76" count="35" type="stmt"/>
+        <line num="77" count="35" type="stmt"/>
+        <line num="78" count="35" type="stmt"/>
+        <line num="79" count="35" type="stmt"/>
+        <line num="80" count="35" type="stmt"/>
+        <line num="81" count="35" type="stmt"/>
+        <line num="82" count="1" type="stmt"/>
+      </file>
+      <file name="Todo.ts" path="D:\Projects\School\tauri\todo_list\src\Todo.ts">
+        <metrics statements="73" coveredstatements="71" conditionals="11" coveredconditionals="10" methods="6" coveredmethods="6"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="21" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="26" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="29" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="31" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
+        <line num="39" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="40" count="1" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="42" count="1" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="44" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="45" count="1" type="stmt"/>
+        <line num="46" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="47" count="1" type="stmt"/>
+        <line num="48" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="49" count="1" type="stmt"/>
+        <line num="50" count="1" type="stmt"/>
+        <line num="51" count="1" type="stmt"/>
+        <line num="52" count="1" type="stmt"/>
+        <line num="53" count="1" type="stmt"/>
+        <line num="54" count="1" type="stmt"/>
+        <line num="55" count="1" type="stmt"/>
+        <line num="56" count="1" type="stmt"/>
+        <line num="57" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="58" count="2" type="stmt"/>
+        <line num="59" count="2" type="stmt"/>
+        <line num="60" count="2" type="stmt"/>
+        <line num="61" count="2" type="stmt"/>
+        <line num="62" count="2" type="cond" truecount="0" falsecount="1"/>
+        <line num="63" count="0" type="stmt"/>
+        <line num="64" count="0" type="stmt"/>
+        <line num="65" count="2" type="stmt"/>
+        <line num="66" count="2" type="stmt"/>
+        <line num="67" count="2" type="stmt"/>
+        <line num="68" count="2" type="stmt"/>
+        <line num="69" count="2" type="stmt"/>
+        <line num="70" count="2" type="stmt"/>
+        <line num="71" count="2" type="stmt"/>
+        <line num="72" count="2" type="stmt"/>
+        <line num="73" count="2" type="cond" truecount="1" falsecount="0"/>
+      </file>
+    </package>
+    <package name="src.utils">
+      <metrics statements="19" coveredstatements="19" conditionals="5" coveredconditionals="5" methods="4" coveredmethods="4"/>
+      <file name="test-utils.tsx" path="D:\Projects\School\tauri\todo_list\src\utils\test-utils.tsx">
+        <metrics statements="19" coveredstatements="19" conditionals="5" coveredconditionals="5" methods="4" coveredmethods="4"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="12" count="3" type="cond" truecount="1" falsecount="0"/>
+        <line num="13" count="3" type="stmt"/>
+        <line num="14" count="3" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="1" type="cond" truecount="1" falsecount="0"/>
+      </file>
+    </package>
+  </project>
+</coverage>
