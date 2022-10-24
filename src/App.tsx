@@ -52,9 +52,9 @@ function App() {
 
   return (
     <div>
-      {/* 未完成todo表 */}
+      {/* Unfinished todo list (state done set to false) */}
       <TodoList filterFn={(i) => !i.done} />
-      {/* 已完成todo表 */}
+      {/* Finished todo list (state done set to true) */}
       <TodoList filterFn={(i) => i.done} />
 
       <Input.Group compact>

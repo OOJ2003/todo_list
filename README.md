@@ -4,6 +4,8 @@
 
 🛠️ Made with react-ts, tauri and ❤️
 
+🧪 Unit tests based on vitest.
+
 ## Usage
 
 Shouldn't explain it. :)
@@ -23,6 +25,12 @@ This project is developed on windows platform, but the build process should be s
 ```bash
 pnpm install
 pnpm tauri build
+```
+
+## Test
+
+```bash
+pnpm vitest --ui
 ```
 
 ## License
