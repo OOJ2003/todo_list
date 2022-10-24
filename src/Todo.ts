@@ -52,7 +52,6 @@ export const deleteTodo = async (
  * @param content The content of the new todo.
  * @param all A collection of all the existing todos.
  * @param fn A function which can updates the component's state.
- *
  */
 export const insertNewTodo = async (
   content: string,
