@@ -1,0 +1,5 @@
+root = true
+
+[src/**.{js, jsx, ts, tsx, css, html}]
+indent_style = space
+indent_size = 2
